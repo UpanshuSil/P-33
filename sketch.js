@@ -11,8 +11,7 @@ var maxSnow=15;
 var snowarray=[];
 var bg="snow3.jpg";
 var bgimg;
-var fd;
-var fd1,fd2;
+
 function preload(){
 bgimg = loadImage("snow3.jpg");
 alien = loadAnimation("img 1.png","img 2.png");
@@ -57,9 +56,7 @@ if(keyDown(LEFT_ARROW)) {
 if (keyDown(RIGHT_ARROW)) {
    alienw.x = alienw.x+2;
  }
- if(alienw.isTouching(fd1,fd2)){
-   alienw.velocity.X=0;
- }
+
   drawSprites();
 }
 async function getTime(){
